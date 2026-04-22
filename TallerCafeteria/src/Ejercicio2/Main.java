@@ -2,20 +2,15 @@ package Ejercicio2;
 
 public class Main {
     public static void main(String[] args) {
-
-        int pedido = 20000;
-        int limiteDescuento = 30000;
-        double valorDescuento = 0.15;
-        double precioTotal = 0;
-
-        if (pedido >= limiteDescuento) {
-                double descuentoFinal = valorDescuento * pedido;
-                precioTotal = pedido - descuentoFinal;
-                System.out.println("El valor del pedido es: " + pedido + " con el descuento es de " + precioTotal);
-
-        } else {
-            System.out.println("No aplica descuento, el valor del pedido es: " + pedido);
+        double subtotal = 42500;
+        double porcentajeDescuento = 0.15;
+        boolean tieneDescuento = subtotal > 30000;
+        if (tieneDescuento) {
+            double valorDescuento = subtotal * porcentajeDescuento;
+            double totalApagar = subtotal - valorDescuento;
+            System.out.printf("Valor del descuento: $%.2f%n", valorDescuento);
+            System.out.printf("Total a pagar: $%.2f%n", totalApagar);
+            System.out.printf("¿Tiene derecho a descuento?: %b%n", tieneDescuento);
         }
-
     }
 }
