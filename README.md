@@ -43,5 +43,12 @@ Usamos el bucle for porque es el que controlo por medio de un contador (i++) que
 
 Ejercicio 7:
 
-¿Cuántos errores encontraste? Clasifica cada uno: ¿es un error de compilación o un error
-lógico? ¿Cómo los distingues?
+¿Cuántos errores encontraste? Clasifica cada uno: ¿es un error de compilación o un error lógico? ¿Cómo los distingues?
+
+Encontramos 3 errores en el código.
+
+1. Esta declarando un entero pero el cod es un string, generando un error de compilación, ya que se intenta asignar un valor string a una variable de tipo int, lo que no es permitido en Java.
+
+2. Error falta el punto y coma;
+     
+3.  El tercer error también es un error lógico, rror: esta asignando un valor a la varible aplicarDescuento , debe realializar una comparacion con ==
