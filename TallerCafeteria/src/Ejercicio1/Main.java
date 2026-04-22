@@ -3,16 +3,17 @@ package Ejercicio1;
 public class Main {
     public static void main(String[] args) {
 
-        String product = "café";
-
+        String nombreProducto = "Café";
         double precioUnitario = 10.5;
+        int cantidadInventario = 25000;
+        boolean disponibleHoy = true;
+        char codigoProducto = 'A';
 
-        System.out.println("el " + product + " vale " + precioUnitario);
-
-        int inventario = 25000;
-        System.out.println("el " + product + " vale " + inventario);
-
-        boolean disponible = true;
-        System.out.println("el " + product + " vale " + disponible);
+        System.out.println(String.format("Nombre del producto: %s", nombreProducto));
+        System.out.println(String.format("Precio unitario: %.2f", precioUnitario));
+        System.out.println(String.format("Cantidad en inventario: %d", cantidadInventario));
+        System.out.println(String.format("¿Disponible hoy?: %b", disponibleHoy));
+        System.out.println(String.format("Código del producto: %c", codigoProducto));
     }
 }
+
